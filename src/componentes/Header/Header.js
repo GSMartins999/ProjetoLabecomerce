@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo from "./../../img/logo.png";
 import styles from './Header.module.css';
-
+import lupa from "./../../img/lupa.png"
 
 function Header(){
   const [showMenu, setShowMenu] = useState(false)
@@ -19,8 +19,9 @@ function Header(){
         <img className={styles.Logo} src={logo}/>
       </div>
 
-      <div>
-        Pesquisar
+      <div className={styles.pesquisar}>
+        <img src={lupa} className={styles.lupa}/>
+        <div className={styles.pesquisarTexto}>Pesquisar</div>
       </div>
 
 
