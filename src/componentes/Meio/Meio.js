@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import styles from "./Meio.module.css";
+import seta from "./../../img/seta.png"
 
 function Meio() {
   const [data, setData] = useState([]);
@@ -49,13 +50,13 @@ function Meio() {
           <div className={styles.buttons}>
             <button onClick={handleLeftClick}>
               <img
-                src="/static/images/216151_right_chevron_icon.png"
+                src={seta}
                 alt="Scroll Left"
               />
             </button>
             <button onClick={handleRightClick}>
               <img
-                src="/static/images/216151_right_chevron_icon.png"
+                src={seta}
                 alt="Scroll Right"
               />
             </button>
