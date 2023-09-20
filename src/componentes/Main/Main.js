@@ -32,7 +32,7 @@ function Main() {
               {data.map((item) => {
                 const { id, name, price, image, infoTech } = item;
                 return (
-                  <a href="">
+                  <a href="" target="_blank">
                     <div className={styles.item} key={id}>
                       <div className={styles.image}>
                         <img

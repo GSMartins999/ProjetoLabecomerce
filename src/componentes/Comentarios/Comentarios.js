@@ -7,8 +7,14 @@ function Comentarios(){
 
         <>
         <div className={styles.container}>
-            
+            <div>
+                <input 
+                    placeholder="Comentários"
+                    className={styles.Comentarios}
+                />
+            </div>
         </div>
+
         </>
     );
 }
