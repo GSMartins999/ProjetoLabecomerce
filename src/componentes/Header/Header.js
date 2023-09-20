@@ -22,13 +22,14 @@ function Header(props) {
           <img className={styles.Logo} src={logo} />
         </div>
 
+     
         <div className={styles.pesquisar}>
           <img src={lupa} className={styles.lupa} />
           <input
             name="search" id="search"
             className={styles.pesquisarTexto}
             value={props.nameFilter} onChange={(e) => props.setNameFilter(e.target.value)}
-            // placeholder="Pesquisar"
+            placeholder="Pesquisar"
             // onChange={handleSearch}
             // value={props.pesquisa}
           />
@@ -46,6 +47,21 @@ function Header(props) {
           </ul> */}
         </div>
 
+        <div className={styles.Categorias}>
+            <select className={styles.selecionar}>
+              <ul className={styles.listagem}>
+                <li>
+                  Olá
+                </li>
+                <li>
+                  Olá
+                </li>
+                <li>
+                  Olá
+                </li>
+              </ul>
+            </select>
+        </div>
         <nav
           className={`${styles.menuSanduwich} ${showMenu ? styles.show : ""}`}
           onClick={toggleMenu}

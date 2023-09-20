@@ -62,42 +62,7 @@ function Main() {
           </div>
           </div>
         </main>
-        <div className={styles.Container_Burner}>
-              
-            <div className={styles.Buner}>
-                <div>
-                    <a href="">Olá</a>
-                </div>
-                <div>
-                    <p>img aqui</p>
-                </div>
-            </div>
-            <div className={styles.Buner}>
-                <div>
-                    <a href="">Olá</a>
-                </div>
-                <div>
-                    <p>img aqui</p>
-                </div>
-            </div>
-            <div className={styles.Buner}>
-                <div>
-                    <a href="">Olá</a>
-                </div>
-                <div>
-                    <p>img aqui</p>
-                </div>
-            </div>
-            <div className={styles.Buner}>
-                <div>
-                    <a href="">Olá</a>
-                </div>
-                <div>
-                    <p>img aqui</p>
-                </div>
-            </div>
-              
-        </div>
+        
       </div>
     </>
   );

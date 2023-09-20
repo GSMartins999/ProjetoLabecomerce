@@ -1,0 +1,41 @@
+/* Em baixo do carrosel */
+
+
+.Container_Burner{
+    background-color: #fefefe;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+}
+
+.Buner{
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    width: 40vw;
+    height: 20vh;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    flex-direction: row;
+    
+}
+
+.BunerImg{
+    background-color: #1e1e1e;
+    width: 40%;
+}
+
+.BunerTexto{
+    background-color: #ff7e3b;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

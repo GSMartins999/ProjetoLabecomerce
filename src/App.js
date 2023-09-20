@@ -1,6 +1,9 @@
 import { useState } from "react";
 import Header from "./componentes/Header/Header";
 import Main from "./componentes/Main/Main"
+import Bunners from "./componentes/Bunners/Bunners";
+import Comentarios from "./componentes/Comentarios/Comentarios"
+import Footer from "./componentes/Footer/Footer";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
@@ -29,6 +32,9 @@ function App() {
       <GlobalStyle/>
         <Header/>
         <Main/>
+        <Bunners/>
+        <Comentarios/>
+        <Footer/>
     </>
   );
 }
