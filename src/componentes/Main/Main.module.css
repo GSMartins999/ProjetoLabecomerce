@@ -1,8 +1,19 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 .container{
-    max-width: 75vw;
+    width: 100vw;
+    height: 75vh;
+    background-color: #1e1e1e;
     box-shadow: #ff7e3b;
-    background-color:#4c0c77;
-   
+}
+
+.Centraliza .carrossel{
+    display: flex;
+    margin-top: 50px;
 }
 
 .imagem{
@@ -27,6 +38,8 @@
     height: 280px;
     border-radius: 16px;
     flex: none;
+    background-color: #ff7e3b;
+
 }
 
 .container.carrossel .item .imagem{
@@ -75,14 +88,43 @@
 .container .buttons{
     width: 100%;
     text-align: center;
+    
 }
 
 .container .buttons button{
     border: none;
     background-color: transparent;
     cursor: pointer;
+    border: solid blue 1px;
 }
 
 .container .buttons button:first-child img{
     transform: rotate(180deg);
+}
+
+
+
+/* Em baixo do carrosel */
+
+
+.Container_Burner{
+    background-color: #fefefe;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+}
+
+.Buner{
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    width: 40vw;
+    height: 20vh;
+    padding: 10px;
+    cursor: pointer;
+    
 }

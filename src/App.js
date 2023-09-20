@@ -1,13 +1,13 @@
-import React from "react";
+import { useState } from "react";
 import Header from "./componentes/Header/Header";
-import Meio from "./componentes/Meio/Meio"
+import Main from "./componentes/Main/Main"
 import { createGlobalStyle } from "styled-components";
-import { useState } from 'react';
 
 const GlobalStyle = createGlobalStyle`
   body{
     padding: 0;
     margin: 0;
+    text-decoration: none;
   }
 
   main{
@@ -20,14 +20,18 @@ const GlobalStyle = createGlobalStyle`
 
 `;
 
+
+
 function App() {
+
   return (
     <>
       <GlobalStyle/>
         <Header/>
-        <Meio/>
+        <Main/>
     </>
   );
 }
+
 
 export default App;
