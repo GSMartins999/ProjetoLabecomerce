@@ -5,6 +5,8 @@ import Bunners from "./componentes/Bunners/Bunners";
 import Comentarios from "./componentes/Comentarios/Comentarios"
 import Footer from "./componentes/Footer/Footer";
 import { createGlobalStyle } from "styled-components";
+import itens from "./itens/itens";
+import ProductCard from "./componentes/ProductCard/ProductCard";
 
 const GlobalStyle = createGlobalStyle`
   body{
@@ -22,6 +24,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 `;
+const nome = "Giovanni";
 
 
 
@@ -31,7 +34,8 @@ function App() {
     <>
       <GlobalStyle/>
         <Header/>
-        <Main/>
+        <Main itens={itens}/>
+        <ProductCard itens={itens} nome={nome}/>
         <Bunners/>
         <Comentarios/>
         <Footer/>

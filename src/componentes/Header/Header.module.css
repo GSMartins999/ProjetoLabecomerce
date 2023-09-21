@@ -1,4 +1,3 @@
-
 .fundo{
     display: flex;
     flex-direction: row;
@@ -48,29 +47,7 @@
     height: 100vh;
     width: 100%;
 }
-.pesquisar{
-    background-color: #f7f7f7;
-    width: 400px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: left;
-    padding-left: 10px;
-    color: darkgray;
-    border-radius: 10px;
-}
-.pesquisarTexto{
-    margin-left: 10px;
-    font-size: 1.1rem;
-}
-.lupa{
-    width: 20px;
-    height: 20px;   
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
+
 /* Menu sandwich: */
 
 .MenuButton{
@@ -90,7 +67,6 @@
     width: 100%;
     height: 5px;
     background-color: black;
-    
 } 
 
 .menuSanduwich{
@@ -117,14 +93,6 @@
 .show .MenuButton{
     color: white;
 }
-.Linha:after{
-    transform: rotate(225deg);
-}
-
-.Linha:before{
-    transform: rotate(135deg);
-}
-
 
 .LinksSandWich{
     background-color: #184745;
@@ -138,4 +106,3 @@
     border: solid 2px #000000;
 
 }
-

@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: cadetblue;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.CardItem{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    border: 2px solid black;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.ButaoComprar{
+    border-radius: 10px;
+    background-color: orange;
+    cursor: pointer;
+}
+
+.imagemFundo{
+    width: 100px;
+    height: 100px;
+}

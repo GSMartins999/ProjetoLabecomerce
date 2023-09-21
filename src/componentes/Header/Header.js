@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo from "./../../img/logo.png";
 import styles from "./Header.module.css";
-import lupa from "./../../img/lupa.png";
+import Pesquisar from "../Pesquisar/Pesquisar";
 
 function Header(props) {
   const [showMenu, setShowMenu] = useState(false);
@@ -21,31 +21,7 @@ function Header(props) {
           </p>
           <img className={styles.Logo} src={logo} />
         </div>
-
-     
-        <div className={styles.pesquisar}>
-          <img src={lupa} className={styles.lupa} />
-          <input
-            name="search" id="search"
-            className={styles.pesquisarTexto}
-            value={props.nameFilter} onChange={(e) => props.setNameFilter(e.target.value)}
-            placeholder="Pesquisar"
-            // onChange={handleSearch}
-            // value={props.pesquisa}
-          />
-          {/* <ul>
-              <li>
-                <p>
-                    Pika
-                </p>
-              </li>
-              <li>
-                <p>
-                    Pika
-                </p>
-              </li>
-          </ul> */}
-        </div>
+        <Pesquisar/>
 
         <div className={styles.Categorias}>
             <select className={styles.selecionar}>

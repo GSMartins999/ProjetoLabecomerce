@@ -1,12 +1,13 @@
 import { useEffect, useState, useRef } from "react";
 import styles from "./Main.module.css";
 import seta from "./../../img/seta.png";
+import Butao from "./../Button/Button"
 
 function Main() {
   const [data, setData] = useState([]);
   const carrousel = useRef(null);
   useEffect(() => {
-    fetch("http://localhost:3000/Tech/shoes.json")
+    fetch("http://localhost:3001/static/shoes.json")
       .then((response) => response.json())
       .then(setData);
   }, []);
@@ -22,6 +23,7 @@ function Main() {
   };
 
   if (!data || !data.length) return null;
+
   return (
     <>
       <div className={styles.container}>
@@ -43,7 +45,7 @@ function Main() {
                         <div className={styles.info}>
                           <span className={styles.name}>{name}</span>
                           <span className={styles.infoTech}>{infoTech}</span>
-                          <span className={styles.preco}>R$ {price}</span>
+                          <button className={styles.preco}>R$ {price}</button>
                         </div>
                       </div>
                     </div>
