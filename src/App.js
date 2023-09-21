@@ -1,11 +1,11 @@
 import { useState } from "react";
 import Header from "./componentes/Header/Header";
-import Main from "./componentes/Main/Main"
 import Bunners from "./componentes/Bunners/Bunners";
 import Comentarios from "./componentes/Comentarios/Comentarios"
 import Footer from "./componentes/Footer/Footer";
 import { createGlobalStyle } from "styled-components";
 import itens from "./itens/itens";
+import itensBunners from "./itensBunners/itensBunners"
 import ProductCard from "./componentes/ProductCard/ProductCard";
 
 const GlobalStyle = createGlobalStyle`
@@ -34,9 +34,8 @@ function App() {
     <>
       <GlobalStyle/>
         <Header/>
-        <Main itens={itens}/>
         <ProductCard itens={itens} nome={nome}/>
-        <Bunners/>
+        <Bunners itensBunners={itensBunners}/>
         <Comentarios/>
         <Footer/>
     </>

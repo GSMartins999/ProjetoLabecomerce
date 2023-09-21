@@ -23,9 +23,16 @@ function Footer() {
         <div className={styles.redes}>
         <h3>Nossas redes sociais: </h3>
         <div>
-          <AiFillFacebook  className={styles.icones} href="www.facebook.com"/>
-          <a href="www.instagram.com" /> <AiFillInstagram  className={styles.icones}/>
-          <a href="www.twitter.com"/> <AiFillTwitterSquare  className={styles.icones}/>
+          <a href="www.facebook.com"/>
+          <AiFillFacebook  className={styles.icones}/> 
+        </div>
+        <div>
+          <a href="www.instagram.com" /> 
+          <AiFillInstagram  className={styles.icones}/>
+        </div>
+        <div>
+          <a href="www.twitter.com"/> 
+          <AiFillTwitterSquare  className={styles.icones}/>
         </div>
         </div>
       </div>

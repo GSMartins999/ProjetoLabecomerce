@@ -88,6 +88,7 @@
     padding: 20px;
     transition: 0.5s;
     border: solid 2px #000000;
+    z-index: 1;
 }
 
 .show .MenuButton{

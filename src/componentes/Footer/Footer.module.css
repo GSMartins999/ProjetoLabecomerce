@@ -20,6 +20,7 @@
      align-items: center;
      left: 0;
      margin-top: 20px;
+     cursor: pointer;
  }
  .sobre > p{
      color: darkgray;
@@ -34,10 +35,13 @@
      justify-content: center;
      align-items: center;
      margin-top: 20px;
+     cursor: pointer;
+
  }
  
  .suport > p{
      color: darkgray;
+     
  }
  
  .suport > p:hover{

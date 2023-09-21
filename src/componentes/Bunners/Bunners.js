@@ -1,50 +1,28 @@
-import styles from "./Bunners.module.css"
+import styles from "./Bunners.module.css";
 
-
-function Bunners (){
-
-    return(
-
-        <>
+function Bunners({ itensBunners }) {
+  return (
+    <>
+      <div>
         <div className={styles.Container_Burner}>
-              
-              <div className={styles.Buner}>
-                  <div className={styles.BunerImg}>
-                      <a href="">img aqui</a>
-                  </div>
-                  <div className={styles.BunerTexto}>
-                      <p>Texto Aqui</p>
-                  </div>
+          {itensBunners.map((itensBunners) => (
+            <div className={styles.Buner}>
+              <div className={styles.BunerImg}>
+                <img
+                  href=""
+                  src={itensBunners.image}
+                  className={styles.ImagemBunner}
+                />
               </div>
-              <div className={styles.Buner}>
-                  <div className={styles.BunerImg}>
-                      <a href="">img aqui</a>
-                  </div>
-                  <div className={styles.BunerTexto}>
-                      <p>Texto Aqui</p>
-                  </div>
+              <div className={styles.BunerTexto}>
+                <p>{itensBunners.infoTech}</p>
               </div>
-              <div className={styles.Buner}>
-                  <div className={styles.BunerImg}>
-                      <a href="">img aqui</a>
-                  </div>
-                  <div className={styles.BunerTexto}>
-                      <p>Texto Aqui</p>
-                  </div>
-              </div>
-              <div className={styles.Buner}>
-                  <div className={styles.BunerImg}>
-                      <a href="">img aqui</a>
-                  </div>
-                  <div className={styles.BunerTexto}>
-                      <p>Texto Aqui</p>
-                  </div>
-              </div>
-          </div>
-        </>
-
-    );
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
+  );
 }
-
 
 export default Bunners;

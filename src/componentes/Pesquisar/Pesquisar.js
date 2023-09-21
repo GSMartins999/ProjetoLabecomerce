@@ -1,5 +1,3 @@
-
-
 import styles from "./Pesquisar.module.css"
 import { BiSearchAlt } from 'react-icons/bi'
 import { useState } from "react";
