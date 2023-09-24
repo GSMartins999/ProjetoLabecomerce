@@ -1,4 +1,4 @@
-const itens = [
+[
   {
     "id": "1",
     "name": "I7 3770/SSD 480GB/16GB.. " ,
@@ -51,11 +51,10 @@ const itens = [
   {
     "id": "8",
     "name": "i5,1TB, 32GB RAM..",
-    "price": 2.599,
+    "price": 279.80,
     "infoTech": "Ficha tecnica",
     "image": "https://cdn.awsli.com.br/2500x2500/141/141286/produto/37976916/546496c347.jpg"
   }
 ]
 
 
-export default itens;

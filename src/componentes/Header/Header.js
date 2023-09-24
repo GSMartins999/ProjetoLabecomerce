@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo from "./../../img/logo.png";
 import styles from "./Header.module.css";
-import Pesquisar from "../Pesquisar/Pesquisar";
+import { BiSearchAlt } from "react-icons/bi";
 
 function Header(props) {
   const [showMenu, setShowMenu] = useState(false);
@@ -9,34 +9,44 @@ function Header(props) {
     setShowMenu(!showMenu);
   };
 
-  const [data, setData ] = useState([]);
-
-
   return (
     <>
       <div className={styles.fundo}>
         <div className={styles.Container}>
-          <p className={styles.Texto}>
-            <h1>Point Tech</h1>
-          </p>
+          <h1 className={styles.Texto}>Point Tech</h1>
           <img className={styles.Logo} src={logo} />
         </div>
-        <Pesquisar/>
+        <div className={styles.pesquisar}>
+          <button type="submit" className={styles.lupa}>
+            <BiSearchAlt className={styles.iconeLupa} />
+          </button>
+         
+         
+          <form className={styles.pesquisarForm}>
+            <input
+              type="text"
+              placeholder="Pesquisar"
+              value={props.nameFilter}
+              onChange={(e) => props.setNameFilter(e.target.value)}
+            />
+          </form>
+        </div>
 
         <div className={styles.Categorias}>
-            <select className={styles.selecionar}>
-              <ul className={styles.listagem}>
-                <li>
-                  Olá
-                </li>
-                <li>
-                  Olá
-                </li>
-                <li>
-                  Olá
-                </li>
-              </ul>
-            </select>
+
+
+          <select
+            className={styles.selecionar}
+            value={props.order}
+            onChange={(event) => {
+              props.setOrder(event.target.value);
+            }}>
+            <option value="">Selecione:</option>
+            <option value="asc">Menores preços</option>
+            <option value="desc">Maiores preços</option>
+          </select>
+
+
         </div>
         <nav
           className={`${styles.menuSanduwich} ${showMenu ? styles.show : ""}`}
