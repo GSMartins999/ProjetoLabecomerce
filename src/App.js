@@ -35,7 +35,7 @@ const CardsContainer = styled.div`
   justify-items: center;
   flex-wrap: wrap;
   width: 100%;
-  background-color: #bddfea;
+  background-color: #334455;
 
 `;
 
