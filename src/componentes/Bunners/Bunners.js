@@ -6,7 +6,7 @@ function Bunners({ itensBunners }) {
       <div>
         <div className={styles.Container_Burner}>
           {itensBunners.map((itensBunners) => (
-            <div className={styles.Buner}>
+            <div key={itensBunners.id} className={styles.Buner}>
               <div className={styles.BunerImg}>
                 <img
                   href=""

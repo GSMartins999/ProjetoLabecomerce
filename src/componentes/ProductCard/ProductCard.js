@@ -1,23 +1,20 @@
 import styles from "./ProductCard.module.css";
+import itens from "./../../itens/itens.json"
 
-function ProductCard({ itens }) {
+function ProductCard(props) {
+
+
   return (
     <>
-      <div className={styles.container}>
-        {
-            
-          itens.map((itens) => (
-            
-            <div className={styles.CardItem}>
-            <img key={1} src={itens.image} className={styles.imagemFundo}/>
-              <p key={2}>{itens.name}</p>
+    <div className={styles.container}>
+            <div className={styles.CardItem} key={props.itens.id}>
+            <img key={itens.image} src={props.itens.image} className={styles.imagemFundo}/>
+              <p key={itens.name}>{props.itens.name}</p>
               <div className={styles.ContainerButao}>
-                <button key={3} className={styles.ButaoComprar}>{itens.price}</button>
+                <button key={itens.price} className={styles.ButaoComprar}>{props.itens.price}</button>
               </div>
-            </div>
-          ))
-        }
       </div>
+    </div>
     </>
   );
 }
