@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     text-decoration: none;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content:center;
   }

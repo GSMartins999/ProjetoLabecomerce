@@ -66,3 +66,25 @@
      color: chocolate;
  }
  
+
+
+ @media screen and (min-device-width : 300px) and (max-width: 550px){
+    .container{
+      gap: 10px;
+      margin: 0 auto;
+     }
+    .sobre{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .suport{
+        display: flex;
+        justify-content: center;
+    }
+    .redes{
+        justify-content: center;
+        display: flex;
+        text-align: center;
+    }
+}

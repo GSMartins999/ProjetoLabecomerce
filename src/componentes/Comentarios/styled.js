@@ -15,7 +15,7 @@ export const ListaTarefasContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70vw;
+  width: 90vw;
   margin: 0 auto;
   min-height: 90vh;
   box-shadow: -2px 3px 30px -7px rgba(0, 0, 0, 0.75);
@@ -61,13 +61,14 @@ export const ListaContainer = styled.div`
 `;
 
 export const ListaMostrada = styled.ul`
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 0;
     margin: 0;
+    min-width: 200px;
 `
 
 export const RemoveButton = styled.button`
@@ -101,3 +102,4 @@ export const LinhaHorizontal = styled.hr`
   width: 100%;
   margin: 16px;
 `
+
