@@ -8,7 +8,7 @@ export const Container = styled.div`
   margin: 0 auto;
   justify-content: center;
   min-height: 100vh;
-  background-color: #313B64;
+  background-color: white;
 `;
 
 export const ListaTarefasContainer = styled.div`
