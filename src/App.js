@@ -7,7 +7,7 @@ import styled,{ createGlobalStyle } from "styled-components";
 import itens from "./itens/itens.json";
 import itensBunners from "./itensBunners/itensBunners"
 import ProductCard from "./componentes/ProductCard/ProductCard";
-
+import Filter from "./componentes/Filtros/Filtros";
 const GlobalStyle = createGlobalStyle`
   body{
     padding: 0;
@@ -39,15 +39,39 @@ const CardsContainer = styled.div`
 
 `;
 
+const CartContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #334455;
+
+`;
+
 
 function App() {
 
-  const [priceFilter, setPriceFilter] = useState("");
+  const [priceFilter, setPriceFilter] = useState("")
   const [nameFilter, setNameFilter ] = useState("")
   const [order , setOrder ] = useState("")
+  const [minPrice, setMinPrice] = useState("")
+  const [maxPrice, setMaxPrice] = useState("")
+  const [cart, setCart] = useState([{}])
 
 
-  console.log("esses itens:" ,itens)
+
+  // const productCart = cart.map((itens) => {
+  //   return (
+  //     <CartCard
+  //     key={itens.id}
+  //     product={itens}
+  //     />
+  //   )
+  // })
+
+
+  console.log(maxPrice)
 
   return (
     <>
@@ -57,16 +81,47 @@ function App() {
         setPriceFilter={setPriceFilter}
         nameFilter={nameFilter}
         setNameFilter={setNameFilter}
+        
+
+        />
+
+        <Filter minPrice={minPrice}
+        setMinPrice={setMinPrice}
+        maxPrice={maxPrice}
+        setMaxPrice={setMaxPrice}
         order={order}
         setOrder={setOrder}
         />
+        {/* <CartContainer>
+
+
+          <CartCard productCart={productCart}/>
+
+
+        </CartContainer> */}
+
 
         <CardsContainer>
         {itens
      
         .filter((itens) => {
           return itens.name.toLowerCase().includes(nameFilter.toLowerCase());
-        }) 
+        })
+        
+        .filter((itens) => {
+          if(itens === ""){
+            return itens;
+          } 
+          else if(itens >= minPrice)
+          {
+            return itens.price >= minPrice;
+          }
+          else {
+            return itens.price <= maxPrice;
+          } 
+          
+        })
+        
         .sort((a, b) => {
           if(order === "asc"){ return a.price > b.price ? 1 : -1}
           if(order === "desc"){ return a.price < b.price ? 1 : -1}

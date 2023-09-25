@@ -20,8 +20,7 @@ function Header(props) {
           <button type="submit" className={styles.lupa}>
             <BiSearchAlt className={styles.iconeLupa} />
           </button>
-         
-         
+
           <form className={styles.pesquisarForm}>
             <input
               type="text"
@@ -32,49 +31,33 @@ function Header(props) {
           </form>
         </div>
 
-        <div className={styles.Categorias}>
-
-
-          <select
-            className={styles.selecionar}
-            value={props.order}
-            onChange={(event) => {
-              props.setOrder(event.target.value);
-            }}>
-            <option value="">Selecione:</option>
-            <option value="asc">Menores preços</option>
-            <option value="desc">Maiores preços</option>
-          </select>
-
-
-        </div>
-        <nav
-          className={`${styles.menuSanduwich} ${showMenu ? styles.show : ""}`}
-          onClick={toggleMenu}
+      </div>
+      <nav
+        className={`${styles.menuSanduwich} ${showMenu ? styles.show : ""}`}
+        onClick={toggleMenu}
+      >
+        <a href="" target="_blank" className={styles.LinksSandWich}>
+          Home
+        </a>
+        <a href="" target="_blank" className={styles.LinksSandWich}>
+          Carrinho
+        </a>
+        <a
+          href="https://www.instagram.com/gsmartins216/"
+          target="_blank"
+          className={styles.LinksSandWich}
         >
-          <a href="" target="_blank" className={styles.LinksSandWich}>
-            Home
-          </a>
-          <a href="" target="_blank" className={styles.LinksSandWich}>
-            Carrinho
-          </a>
-          <a
-            href="https://www.instagram.com/gsmartins216/"
-            target="_blank"
-            className={styles.LinksSandWich}
-          >
-            Suporte
-          </a>
-          <a href="" target="_blank" className={styles.LinksSandWich}>
-            Configurações
-          </a>
-        </nav>
+          Suporte
+        </a>
+        <a href="" target="_blank" className={styles.LinksSandWich}>
+          Configurações
+        </a>
+      </nav>
 
-        <div className={styles.MenuButton} onClick={toggleMenu}>
-          <span className={styles.Linha}></span>
-          <span className={styles.Linha}></span>
-          <span className={styles.Linha}></span>
-        </div>
+      <div className={styles.MenuButton} onClick={toggleMenu}>
+        <span className={styles.Linha}></span>
+        <span className={styles.Linha}></span>
+        <span className={styles.Linha}></span>
       </div>
     </>
   );
