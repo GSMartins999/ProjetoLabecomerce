@@ -109,17 +109,10 @@ function App() {
         })
         
         .filter((itens) => {
-          if(itens === ""){
-            return itens;
-          } 
-          else if(itens >= minPrice)
-          {
-            return itens.price >= minPrice;
-          }
-          else {
-            return itens.price <= maxPrice;
-          } 
-          
+          return itens.price >= minPrice || minPrice === ""
+        })
+        .filter((itens) => {
+          return itens.price <= maxPrice || maxPrice === ""
         })
         
         .sort((a, b) => {
