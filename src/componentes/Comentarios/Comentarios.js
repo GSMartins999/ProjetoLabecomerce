@@ -21,7 +21,7 @@ const listaDeTarefasInicial = [
     titulo: "Adorei o site, ficou incrível!!"
   },
   {
-    titulo: "Adorei o site, ficou incrível!!"
+    titulo: "Adorei as camisas de Astrounas, são incríveis."
   }
 ];
 

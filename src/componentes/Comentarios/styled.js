@@ -15,8 +15,7 @@ export const ListaTarefasContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1000px;
-  min-width: 550px;
+  width: 70vw;
   margin: 0 auto;
   min-height: 90vh;
   box-shadow: -2px 3px 30px -7px rgba(0, 0, 0, 0.75);
@@ -28,7 +27,7 @@ export const ListaTarefasContainer = styled.div`
 
 export const InputContainer = styled.div`
   padding: 2rem;
-  width: 100%;
+  width: 70vw;
   background-color: #000000;
   display: flex;
   gap: 1rem;
@@ -41,6 +40,7 @@ export const TaskInput = styled.input`
   padding: 0.75rem;
   border-radius: 0.5rem;
   font-size: 16px;
+  width: 10vw;
 `;
 
 export const AddTaskButton = styled.button`
@@ -50,23 +50,24 @@ export const AddTaskButton = styled.button`
 `;
 
 export const ListaContainer = styled.div`
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
-  overflow: auto;
   justify-content: center;
   align-items: center;
-  min-width: 300px;
+  margin: 0;
+  padding: 0;
 
 `;
 
 export const ListaMostrada = styled.ul`
-    width: 90%;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-width: 300px;
+    padding: 0;
+    margin: 0;
 `
 
 export const RemoveButton = styled.button`

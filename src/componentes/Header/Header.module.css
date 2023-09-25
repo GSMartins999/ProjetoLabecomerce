@@ -24,7 +24,9 @@
 }
 
 .Logo{
-    left: 0;
+    margin-left: 60px;
+    width: 100px;
+    height: 100px;
 }
 
 /* Pesquisa */
@@ -40,6 +42,7 @@
     /* padding-left: 10px; */
     color: darkgray;
     border-radius: 10px;
+    margin-left: 40px;
     
     
 }
@@ -89,7 +92,7 @@ input{
     height: 40px;
     position: absolute;
     right: 20px;
-    top: 10px;
+    top: 40px;
     cursor: pointer;
     display: flex;
     flex-direction: column;

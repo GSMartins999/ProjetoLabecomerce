@@ -15,7 +15,7 @@ function Bunners({ itensBunners }) {
                 />
               </div>
               <div className={styles.BunerTexto}>
-                <p>{itensBunners.infoTech}</p>
+                <p>{itensBunners.name}</p>
               </div>
             </div>
           ))}

@@ -4,7 +4,7 @@
 .Container_Burner{
     background-color: #fefefe;
     width: 100vw;
-    height: 60vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -26,6 +26,7 @@
     position:relative;
     top:0;
     cursor: pointer;
+    min-width: 200px;
 }
 
 .Buner:hover{

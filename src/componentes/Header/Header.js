@@ -2,6 +2,7 @@ import { useState } from "react";
 import logo from "./../../img/logo.png";
 import styles from "./Header.module.css";
 import { BiSearchAlt } from "react-icons/bi";
+import {GiAstronautHelmet} from "react-icons/gi"
 
 function Header(props) {
   const [showMenu, setShowMenu] = useState(false);
@@ -13,8 +14,7 @@ function Header(props) {
     <>
       <div className={styles.fundo}>
         <div className={styles.Container}>
-          <h1 className={styles.Texto}>Point Tech</h1>
-          <img className={styles.Logo} src={logo} />
+          <GiAstronautHelmet className={styles.Logo} />
         </div>
         <div className={styles.pesquisar}>
           <button type="submit" className={styles.lupa}>
