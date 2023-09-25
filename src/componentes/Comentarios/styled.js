@@ -8,7 +8,7 @@ export const Container = styled.div`
   margin: 0 auto;
   justify-content: center;
   min-height: 100vh;
-  background-color: #334455;
+  background-color: #313B64;
 `;
 
 export const ListaTarefasContainer = styled.div`
@@ -22,8 +22,7 @@ export const ListaTarefasContainer = styled.div`
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   background-color: white;
-  margin-bottom: 10px;
-  
+  margin-bottom: 10px;  
 `;
 
 export const InputContainer = styled.div`
@@ -35,6 +34,7 @@ export const InputContainer = styled.div`
   justify-content: center;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
+  
 `;
 
 export const TaskInput = styled.input`
