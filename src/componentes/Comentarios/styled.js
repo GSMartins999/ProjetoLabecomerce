@@ -23,6 +23,7 @@ export const ListaTarefasContainer = styled.div`
   border-bottom-left-radius: 15px;
   background-color: white;
   margin-bottom: 10px;
+  
 `;
 
 export const InputContainer = styled.div`

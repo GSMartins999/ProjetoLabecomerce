@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
     width: 100vw;
     display: flex;
     justify-content:center;
+    
   }
 
   main{
@@ -36,7 +37,8 @@ const CardsContainer = styled.div`
   flex-wrap: wrap;
   width: 100%;
   background-color: #334455;
-
+  border-bottom: solid black 2px;
+  
 `;
 
 const CartContainer = styled.div`

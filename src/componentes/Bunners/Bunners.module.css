@@ -2,7 +2,7 @@
 
 
 .Container_Burner{
-    background-color: #fefefe;
+    
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -11,6 +11,10 @@
     justify-content: center;
     align-content: center;
     gap: 10px;
+    background-image: url(./../../img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
 }
 
 .Buner{
@@ -27,6 +31,7 @@
     cursor: pointer;
     min-width: 200px;
     justify-content: center;
+
 }
 
 .Buner:hover{

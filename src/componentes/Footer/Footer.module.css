@@ -7,6 +7,11 @@
     align-items: start;
     flex-direction: row;
     background-color: white;
+    background-image: url(./../../img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    color: orange;
  }
  
  .container > h3{
@@ -23,7 +28,7 @@
      cursor: pointer;
  }
  .sobre > p{
-     color: darkgray;
+     color: white;
  }
  .sobre > p:hover{
      color: chocolate;
@@ -59,7 +64,7 @@
  .icones{
      cursor: pointer;
      font-size: 2.5rem;
-     color: black;
+     color: white;
  }
  
  .icones:hover{
